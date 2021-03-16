@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 import UserModel from './User';
 
-mongoose.connect('mongodb://localhost:27017/jr-12', {
+const mongodbServerHost = process.env.MONGO_HOST || '127.0.0.1'
+
+mongoose.connect(`mongodb://localhost:${mongodbServerHost}:27018/jr-12`, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });

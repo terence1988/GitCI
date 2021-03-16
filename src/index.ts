@@ -1,7 +1,7 @@
 const app = require('./app');
 
-app.listen(3000, () => {
-	console.log('Server is on : 3000');
+app.listen(3001, () => {
+	console.log('Server is on : 3001');
 });
 
 //The middleware is usually not too large but the controller must be large

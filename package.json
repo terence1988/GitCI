@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
+		"build": "tsc",
 		"start": "ts-node ./src/index.ts",
 		"test": "egg-bin --ts test test"
 	},
@@ -16,13 +17,15 @@
 		"koa-router": "^10.0.0",
 		"mongoose": "^5.11.18",
 		"nodemon": "^2.0.7",
-		"ts-jest": "^26.5.2"
+		"ts-jest": "^26.5.2",
+		"ts-node": "^9.1.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.20",
 		"@types/koa-bodyparser": "^4.3.0",
 		"@types/koa-router": "^7.4.1",
 		"@types/mocha": "^8.2.1",
+		"@types/node": "^14.14.32",
 		"@types/supertest": "^2.0.10",
 		"egg-bin": "^4.15.0",
 		"supertest": "^6.1.3",
